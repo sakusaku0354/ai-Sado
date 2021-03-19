@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN",
+  sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%; 
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(80, 81, 82);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  color: white;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none !important;
+}
+
+.header-right {
+  font-size: 15px;
+  text-align: center;
+}
+
+.header-right a {
+  margin-right: 50px;
+  color: white;
+  transition: all 0.5s;
+}
+
+.header-right a :hover{
+  background-color:rgb(51, 49, 49);
+}
+
+.header-left {
+  width: 125px;
+}
+
+.top-wrapper {
+  background-image: url("../image/Sado-view.jpg");
+  background-size: cover;
+  color: white;
+  height: 600px;
+  text-align: center;
+  padding-top: 150px;
+}
+.top-wrapper h1 {
+  font-size: 45px;
+  opacity: 0.7;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  font-size: 30px;
+  opacity: 0.7
+}
+
+.btn-wrapper {
+  margin: 30px 0;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 30px;
+}
+
+.instagram {
+  background-color: #d93177;
+}
+
+.btn {
+  padding: 8ps 24px;
+  color: white;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+}
+
+btn:hover {
+  opacity: 1;
+}
+
+.activity-wrapper{
+  height: 650px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #f7f7f7;
+  text-align: center;
+  border-bottom: dashed 2px rgb(145, 160, 175)
+}
+
+.title {
+  padding-bottom: 20px;
+  color: #434244;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.activity {
+ float: left;
+  width: 25%;
+  padding-right: 10px;
+}
+
+.activity-icon {
+  position: relative;
+
+}
+
+.activity-icon img {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.activity-icon p {
+color: #565357;
+opacity: 0.8;
+font-size: 20px;
+}
+
+.text-contents {
+  width: 90%;
+  color: ＃b3aeb5;
+  opacity: 0.8;
+}
+
+.itidiku {
+  color: magenta;
+}
+
+/*レスポンシブ対応ができないからとりあえず保留
+.learning-wrapper {
+  padding: 20px 0;
+  padding-bottom: 80px;
+  background-color: aliceblue;
+  text-align: center;
+  height: 30%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2{
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #434244;
+  text-decoration: underline; 
+}
+
+.message {
+  margin-top: 20px;
+  padding: 10px 40px;
+  background-color: dodgerblue;
+  cursor: pointer;
+  box-shadow: 0 7px #051538;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+  opacity: 1;
+}
+
+*/
+
+footer {
+  background-color: rgb(80, 81, 82);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  height: 10%;
+}
+
+.footer-logo img{
+  width: 125px;
+  padding-top: 10px;
+}
+
+.footer-logo h6 {
+  color: white;
+}
+
+.copyright {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+/*ここからはハンバーガーメニューのもの*/
+.hamburger-menu {
+  display: none;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: rgb(80, 81, 82);
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+
+.menu-content ul {
+  padding: 70px 10px 0;
+}
+
+.menu-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 80;
+  background-color: #3584bb;
+  transition: all 0.5s;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;
+}
+
+
+/* ここからはgoogle-form.htmlのもの*/
+.google-form {
+  width: 100%;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.contact {
+  color:rgb(45, 45, 46);
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+/*ここから下はai-Sado.htmlのもの*/
+.summary {
+  width: 100%;
+  padding-top: 200px;
+  padding-left: 60px;
+  background-color: rgb(210, 241, 241);
+  color: rgb(53, 51, 51);
+  height: 800px;
+  opacity: 0.9;
+}
+
+.summary h2 {
+  color:rgb(53, 51, 51);
+  text-align: center;
+}
+
+.summary p {
+  font-size: 18px;
+  padding-top: 30px;
+}
+
+.summary img {
+  height: 60%;
+  width: 50%;
+  float: right;
+  padding-top: 30px;
+  padding-right: 90px;
+}
+
+.regulation {
+  padding-top: 250px;
+  color:rgb(33, 33, 34);
+}
+
+.middle-wrapper {
+  padding: 30px 30px; 
+  height: 150px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.fortune-telling {
+  color: rgb(51, 49, 49);
+  display: block;
+  font-size: 20px;
+}
+
+.return {
+  color:rgb(80, 81, 82);
+  padding-top: 30px;
+  display: block;
+}
+
