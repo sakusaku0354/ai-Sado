@@ -1,0 +1,67 @@
+/*タブレット向けレイアウト*/
+@media all and (max-width: 1000px) {
+  .activity {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  footer {
+    text-align: center;
+  }
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  .top-wrapper p {
+    font-size: 20pxs
+  }
+
+  .activity-wrapper {
+    height: 1000px;
+  }
+
+  footer {
+    height: 150px;
+  }
+
+ 
+}
+  
+
+/*スマホ向けレイアウト*/
+@media all and (max-width: 670px) {
+  .hamburger-menu {
+    display: initial;
+  }
+  .activity {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .facebook {
+    margin-bottom: 10px;
+  }
+
+  .activity-wrapper {
+    height: 1800px;
+  }
+  .top-wrapper {
+    text-align: center;
+  }
+  .header-right a {
+    display: none;
+  }
+  .menu-icon {
+    display: block !important;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+  }
+
+  footer {
+    height: 150px;
+  }
+
+}
